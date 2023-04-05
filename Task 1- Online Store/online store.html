@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Discount Sale</title>
+    <link rel="stylesheet" href="online store.css">
+    <script src="online store.js"></script>
+</head>
+
+<body>
+    <label>
+        <h1>KozzBy Clearance Sale</h1>
+    </label>
+    <table>
+        <form id="form" onsubmit="return calculateDiscount()" onreset="reset()">
+            <div>
+                <tr>
+                    <th><label for="ptype">Product Category</label></th>
+                    <td><select name="products" id="ptype">
+                            <option value="Electronic Products">Electronic Products</option>
+                            <option value="Clothing and Apparels">Clothing and Apparels</option>
+                            <option value="Health Care Products">Health Care Products</option>
+                        </select></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label for="name">Product Name</label></th>
+                    <td><input type="text" id="name" placeholder="Product Name" required></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label>Product Price</label></th>
+                    <td><input type="number" id="price" required></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label>Quantity</label></th>
+                    <td><input type="number" id="qty" required></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label>Total Price</label></th>
+                    <td><input type="number" id="tPrice"></td>
+                </tr>
+            </div>
+    </table>
+    <div id="submit">
+        <input type="submit" value="GET DISCOUNT">
+    </div>
+    <div id="reset">
+        <button type="reset" value="CLEAR" >CLEAR</button><br><br>
+    </div>
+    <div  id="discount"> </div>
+    <div  id="result"> </div>
+    </form>
+</body>
+
+</html>
